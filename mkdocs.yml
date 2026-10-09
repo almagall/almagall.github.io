@@ -51,6 +51,9 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/alfonso-magallon-3a2321199/
       name: LinkedIn
+    - icon: fontawesome/brands/upwork
+      link: https://www.upwork.com/freelancers/~01a766631b3f35797d
+      name: Upwork
 
 extra_css:
   - stylesheets/extra.css
