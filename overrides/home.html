@@ -1,0 +1,209 @@
+{% extends "main.html" %}
+
+{#- Homepage layout. Edit the copy directly in this file. -#}
+{% set book = "https://cal.com/alfonso-magallon/intro-call" %}
+
+{% block container %}
+<div class="md-content home" data-md-component="content">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Data and analytics consultant</p>
+      <h1>Clear answers from your data, not just more dashboards.</h1>
+      <ul class="outcomes">
+        <li>Reports your team trusts, because the numbers reconcile.</li>
+        <li>Answers in one place instead of spread across spreadsheets.</li>
+        <li>Every page built around a decision someone has to make.</li>
+      </ul>
+      <p class="cred"><strong>5+ years</strong> in business intelligence: Power BI, data modelling, analytics, and forecasting. Based in San Diego, CA.</p>
+      <div class="actions">
+        <a class="btn" href="{{ book }}">Book a free intro call</a>
+        <a class="btn ghost" href="{{ 'portfolio/' | url }}">View case studies</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="{{ 'assets/alfonso-headshot.jpg' | url }}" alt="Alfonso Magallon" width="720" height="900">
+    </div>
+  </section>
+
+  <div class="stats">
+    <div><strong>Top Rated</strong><span>on Upwork</span></div>
+    <div><strong class="cy">100%</strong><span>Job Success Score</span></div>
+    <div><strong>5.0 / 5</strong><span>on every client review</span></div>
+  </div>
+
+  <!-- How I work -->
+  <section class="split" id="how">
+    <div class="split-head">
+      <p class="eyebrow">How I work</p>
+      <h2>From a question to a decision you can defend.</h2>
+      <p class="mu">Every project moves through the same four layers. Each one answers a question your team is already asking.</p>
+    </div>
+    <div class="split-body layers">
+      <article class="layer">
+        <p class="step">Ask</p>
+        <h3>Start with the decision</h3>
+        <p>Before any data work, we agree what the report is for, who uses it, and what they will do differently because of it.</p>
+        <p class="answers">Answers: "What do we actually need to know?"</p>
+      </article>
+      <article class="layer">
+        <p class="step">Model</p>
+        <h3>Build numbers you can trust</h3>
+        <p>Sources are cleaned and joined into one data model, with checks so the same figure means the same thing on every page.</p>
+        <p class="answers">Answers: "Can I rely on this number?"</p>
+      </article>
+      <article class="layer">
+        <p class="step">Show</p>
+        <h3>Put answers in front of people</h3>
+        <p>Power BI reports that lead with what changed and why, in the language your team already uses.</p>
+        <p class="answers">Answers: "What changed, and what should I do about it?"</p>
+      </article>
+      <article class="layer key">
+        <p class="step">Forecast</p>
+        <h3>See what is likely to happen next</h3>
+        <p>Where there is enough history, models that put an honest range around what comes next, built into the same reports.</p>
+        <p class="answers">Answers: "Where are we heading if nothing changes?"</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="split" id="services">
+    <div class="split-head">
+      <p class="eyebrow">Services</p>
+      <h2>Three ways to work together.</h2>
+      <p class="mu">Each is scoped and priced before anything starts.</p>
+    </div>
+    <div class="split-body">
+      <article class="card svc">
+        <h3>Dashboard build</h3>
+        <p>A new Power BI report built from your spreadsheets or systems: scoped around the decisions it has to support, modelled properly, and handed over with documentation.</p>
+        <p class="proof"><span>Recent proof</span><a href="#reviews">Real estate portfolio dashboard</a></p>
+      </article>
+      <article class="card svc">
+        <h3>Report rescue</h3>
+        <p>An existing report that is slow, wrong, or nobody trusts. I find what is broken in the model or the measures, fix it, and explain what changed.</p>
+        <p class="proof"><span>Recent proof</span><a href="#reviews">Urgent Power BI support</a></p>
+      </article>
+      <article class="card svc">
+        <h3>Ongoing support</h3>
+        <p>A set block of hours each month for new pages, changes, and questions, so your reporting keeps up with the business.</p>
+        <p class="proof"><span>Recent proof</span><a href="#reviews">Well characterization, repeat client</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Client work -->
+  <section class="block" id="work">
+    <div class="block-head">
+      <div>
+        <p class="eyebrow">Client work</p>
+        <h2>Where this has paid off.</h2>
+        <p class="mu">Client dashboards stay private, so these describe the work rather than showing screens.</p>
+      </div>
+      <a class="more" href="{{ 'portfolio/' | url }}">All case studies</a>
+    </div>
+    <div class="grid2">
+      <article class="card work">
+        <p class="badge">35 hours, repeat client</p>
+        <h3>Well characterization dashboard</h3>
+        <p>Complex Excel workbooks for an oil and gas consultancy turned into a star-schema model and an interactive report for comparing wells.</p>
+        <p class="tags"><span>Power BI</span><span>Power Query</span><span>DAX</span></p>
+      </article>
+      <article class="card work">
+        <p class="badge">Delivered within 2 days</p>
+        <h3>Real estate portfolio dashboard</h3>
+        <p>Occupancy, revenue, expenses, and ROI across a property portfolio in one documented report, with drill-through to each property.</p>
+        <p class="tags"><span>Power BI</span><span>Power Query</span><span>DAX</span></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Built on my own -->
+  <section class="block" id="built">
+    <div class="block-head">
+      <div>
+        <p class="eyebrow">Personal builds</p>
+        <h2>Built end to end, on my own.</h2>
+        <p class="mu">From problem framing to a working tool, with no team behind me.</p>
+      </div>
+    </div>
+    <a class="card feature" href="{{ 'portfolio/projects/schedule-forecasting-model/' | url }}">
+      <div class="pipe" aria-label="Pipeline: P6 schedules, feature preparation, XGBoost model, scenario grid, Fabric lakehouse, Power BI report">
+        <span>P6 schedules</span><span>Feature preparation</span><span>XGBoost model</span><span>Scenario grid</span><span>Fabric lakehouse</span><span class="end">Power BI report</span>
+      </div>
+      <div class="feature-copy">
+        <p class="badge">50+ schedules modelled</p>
+        <h3>Schedule forecasting model</h3>
+        <p>A machine learning model that puts P50, P80, and P90 ranges around a construction project's finish date, explored in Power BI.</p>
+        <p class="tags"><span>Python</span><span>XGBoost</span><span>Microsoft Fabric</span><span>Power BI</span></p>
+        <span class="more">Read the case study</span>
+      </div>
+    </a>
+    <article class="card work small">
+      <p class="badge">In TestFlight beta</p>
+      <h3>repIQ</h3>
+      <p>An iOS workout tracking app with an analytics focus, designed, built, and taken to beta solo.</p>
+      <p class="tags"><span>Swift</span><span>SwiftUI</span><span>RevenueCat</span></p>
+    </article>
+  </section>
+
+  <!-- Reviews -->
+  <section class="block" id="reviews">
+    <div class="block-head"><div><p class="eyebrow">Reviews</p><h2>What clients say.</h2></div></div>
+    <div class="grid3">
+      <figure class="card quote">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <blockquote>"Alfonso exceeded my expectations with both the quality and speed of his work. He developed a well-structured Power BI data model, handled complex Excel data integration, and adapted quickly as the project evolved. He was proactive, easy to communicate with, and consistently delivered on time. I highly recommend him and look forward to working with him again on future projects."</blockquote>
+        <figcaption>Verified Upwork client<br>Well characterization dashboard</figcaption>
+      </figure>
+      <figure class="card quote">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <blockquote>"Alfonso delivered an excellent Power BI dashboard that clearly visualized property occupancy, revenue, expenses, and ROI across my real estate portfolio. He was professional, communicative, and provided a well-documented, easy-to-use dashboard that exceeded expectations."</blockquote>
+        <figcaption>Verified Upwork client<br>Real estate portfolio dashboard</figcaption>
+      </figure>
+      <figure class="card quote">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <blockquote>"I can't recommend Alfonso enough! He came through with a last-minute project that required a very late evening. His work was excellent, and [he] would be an asset to any person or team."</blockquote>
+        <figcaption>Verified Upwork client<br>Urgent Power BI support</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="split" id="about">
+    <div class="split-head">
+      <p class="eyebrow">About</p>
+      <h2>An analyst who explains the why.</h2>
+    </div>
+    <div class="split-body prose">
+      <p>I'm a senior business intelligence analyst in utility-scale solar construction, where I build reporting across finance, operations, project controls, engineering, and estimating. I also run an internal training program that teaches non-analysts to work with their own data, so I am used to explaining technical decisions in plain language.</p>
+      <p>I hold an M.S. in Data Science with a focus on machine learning and AI. Most of my client work today is Power BI: data modelling, DAX, and reports that end in a clear next action. Forecasting and AI work is where I am heading next.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="split" id="faq">
+    <div class="split-head">
+      <p class="eyebrow">FAQ</p>
+      <h2>Common questions.</h2>
+    </div>
+    <div class="split-body faq">
+      <details><summary>What kinds of projects do you take on?</summary><p>Mostly Power BI: new dashboards, fixing or speeding up existing reports, data modelling, and DAX. I also take on SQL and Python analysis work, and I am open to forecasting projects where there is enough history to model.</p></details>
+      <details><summary>My data is in spreadsheets. Is that a problem?</summary><p>No. Several of my projects started from Excel files. Part of the work is turning those into a clean model that refreshes reliably.</p></details>
+      <details><summary>How do you price work?</summary><p>Where the scope is clear I quote a fixed price for a defined deliverable. For open-ended or ongoing work I use a monthly block of hours. Either way you see the number before anything starts.</p></details>
+      <details><summary>How do you handle confidential data?</summary><p>I am happy to sign an NDA before seeing anything, and I work inside your environment where possible. I do not publish client dashboards or data.</p></details>
+      <details><summary>What happens after you hand over?</summary><p>You get documentation covering the data model, the measures, and how to refresh and extend the report. If you want me to stay involved, we can set up ongoing support.</p></details>
+    </div>
+  </section>
+
+  <!-- Closing call to action -->
+  <section class="card cta">
+    <h2>Not sure what you need yet? That is what the call is for.</h2>
+    <p class="mu">Book a free 30-minute intro call. Tell me what you are trying to answer with your data, and I will tell you honestly whether I can help and what it would take.</p>
+    <a class="btn" href="{{ book }}">Book a free intro call</a>
+  </section>
+
+</div>
+{% endblock %}

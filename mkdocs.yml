@@ -1,0 +1,86 @@
+site_name: Alfonso Magallon
+site_description: Power BI and data consulting for small teams. Clear answers from your data, built by a senior BI analyst with an M.S. in Data Science.
+site_url: https://almagall.github.io/
+
+nav:
+  - Home: index.md
+  - Case Studies:
+    - portfolio/index.md
+    - portfolio/projects/schedule-forecasting-model.md
+  - Writing:
+    - blog/index.md
+  - Book a call: https://cal.com/alfonso-magallon/intro-call
+
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.footer
+    - content.code.copy
+  language: en
+  palette:
+    # Follows the visitor's system setting; the toggle in the header switches it.
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: Geist
+    code: Geist Mono
+  icon:
+    logo: material/chart-timeline-variant
+  favicon: assets/favicon.svg
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alfonso-magallon-3a2321199/
+      name: LinkedIn
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/site.js
+
+plugins:
+  # Search is off while the site is small. Add "- search" here to turn it back on.
+  - social:
+      # Link-preview images. Set SOCIAL_CARDS=false to skip them in a local preview.
+      enabled: !ENV [SOCIAL_CARDS, true]
+      cards_layout_options:
+        background_color: "#060913"
+  - blog:
+      blog_dir: blog
+      authors_file: "{blog}/.authors.yml"
+      categories: true
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: |
+  &copy; 2026 Alfonso Magallon
