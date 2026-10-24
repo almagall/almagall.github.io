@@ -1,6 +1,6 @@
 # Alfonso Magallon: consulting website
 
-Live at **https://almagall.github.io/**. Built with MkDocs Material, starting from the datalumina/mkdocs-website-template.
+Live at **https://www.amdatasolutions.com/**. Built with MkDocs Material, starting from the datalumina/mkdocs-website-template.
 
 ## How it publishes
 Every push to `main` builds the site and publishes it through GitHub Actions (`.github/workflows/deploy.yml`). Check progress under the repository's **Actions** tab; a green tick means it is live, usually within two minutes.

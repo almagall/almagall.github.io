@@ -1,6 +1,6 @@
 site_name: Alfonso Magallon
 site_description: Power BI and data consulting for small teams. Clear answers from your data, built by a senior BI analyst with an M.S. in Data Science.
-site_url: https://almagall.github.io/
+site_url: https://www.amdatasolutions.com/
 
 nav:
   - Home: index.md
