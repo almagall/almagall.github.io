@@ -6,7 +6,7 @@ nav:
   - Home: index.md
   - Case Studies:
     - portfolio/index.md
-    - portfolio/projects/schedule-forecasting-model.md
+    - portfolio/projects/cash-flow-job-profitability.md
   - Writing:
     - blog/index.md
   - Book a call: https://cal.com/alfonso-magallon/intro-call

@@ -10,13 +10,15 @@ hide:
 
 <div class="grid cards" markdown>
 
--   **[Schedule forecasting model](projects/schedule-forecasting-model.md)**
+-   **[Cash flow and job profitability](projects/cash-flow-job-profitability.md)**
 
     ---
 
-    Construction, machine learning. A model trained on 50+ completed project schedules that reports P50, P80, and P90 finish dates in Power BI.
+    [![Watchlist page of the Calder Interiors report](../assets/case-studies/calder/watchlist.webp)](projects/cash-flow-job-profitability.md)
 
-    [Read the case study](projects/schedule-forecasting-model.md){ .md-button }
+    Construction, finance. QuickBooks Online and six spreadsheets piped into Postgres and a six-page Power BI report showing where a contractor's cash is stuck and which jobs lose money.
+
+    [Read the case study](projects/cash-flow-job-profitability.md){ .md-button }
 
 </div>
 

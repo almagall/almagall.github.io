@@ -231,3 +231,8 @@ body::before {
 .stats div, .layer, .pipe span { box-shadow: var(--shadow); }
 .md-header__button.md-icon[for="__palette"], .md-header__option { color: var(--tx); }
 .md-search__form { background: var(--card); }
+
+/* Case study screenshots */
+.md-typeset a > img[src*="case-studies/"] { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); }
+.md-typeset .caption { margin-top: .5rem; font-size: .7rem; color: var(--md-default-fg-color--light); }
+.md-typeset .grid.cards img[src*="case-studies/"] { border-radius: 10px; border: 1px solid var(--line); margin-bottom: .4rem; }
