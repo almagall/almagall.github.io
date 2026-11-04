@@ -11,7 +11,8 @@ description: An end-to-end reporting system for a commercial interiors contracto
     **Company**: Calder Interiors Group, a $10.8M commercial interiors contractor  
     **Problem**: Profitable on paper, short on cash, and unable to say which jobs and customers made money  
     **Deliverable**: A data pipeline from QuickBooks Online and six spreadsheets into Postgres, and a six-page Power BI report  
-    **Role**: Sole builder, from source systems through the report
+    **Role**: Sole builder, from source systems through the report  
+    **Code**: [GitHub repository](https://github.com/almagall/calder-cashflow-job-profitability)
 
 !!! note "About this case study"
     I built this case study to show how I work from start to finish. Calder Interiors is a fictional company, and the data is realistic sample data I generated, loaded into a real QuickBooks Online sandbox, and pulled back out the way I would for a client.
@@ -102,6 +103,10 @@ The whole stack runs on free tiers. Neon's free Postgres plan holds the database
 - Scheduled daily refreshes, so the report updates without anyone running the extract
 - Monthly snapshots, so the month-over-month trends come from saved history rather than being rebuilt from the data
 - Moving the SQL models to dbt, with tests on every model
+
+## Code
+
+The pipeline, SQL models, model checks and report assets are on GitHub: [almagall/calder-cashflow-job-profitability](https://github.com/almagall/calder-cashflow-job-profitability).
 
 ## Tech stack
 
