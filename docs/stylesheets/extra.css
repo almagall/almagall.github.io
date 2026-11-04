@@ -236,3 +236,6 @@ body::before {
 .md-typeset a > img[src*="case-studies/"] { display: block; width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); }
 .md-typeset .caption { margin-top: .5rem; font-size: .7rem; color: var(--md-default-fg-color--light); }
 .md-typeset .grid.cards img[src*="case-studies/"] { border-radius: 10px; border: 1px solid var(--line); margin-bottom: .4rem; }
+
+/* Smaller preview image on case study cards */
+.md-typeset .grid.cards img.preview { max-width: 420px; width: 100%; }

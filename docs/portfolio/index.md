@@ -14,9 +14,9 @@ hide:
 
     ---
 
-    [![Watchlist page of the Calder Interiors report](../assets/case-studies/calder/watchlist.webp)](projects/cash-flow-job-profitability.md)
-
     Construction, finance. QuickBooks Online and six spreadsheets piped into Postgres and a six-page Power BI report showing where a contractor's cash is stuck and which jobs lose money.
+
+    [![Watchlist page of the Calder Interiors report](../assets/case-studies/calder/watchlist.webp){ .preview }](projects/cash-flow-job-profitability.md)
 
     [Read the case study](projects/cash-flow-job-profitability.md){ .md-button }
 
